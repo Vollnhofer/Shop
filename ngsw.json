@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587230609900,
+  "timestamp": 1587231216546,
   "index": "/Shop/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/Shop/favicon.ico",
         "/Shop/index.html",
-        "/Shop/main-es2015.6b666dccc88100670fe5.js",
-        "/Shop/main-es5.6b666dccc88100670fe5.js",
+        "/Shop/main-es2015.f31515a09d1162a1b950.js",
+        "/Shop/main-es5.f31515a09d1162a1b950.js",
         "/Shop/manifest.webmanifest",
         "/Shop/polyfills-es2015.690002c25ea8557bb4b0.js",
         "/Shop/polyfills-es5.9e286f6d9247438cbb02.js",
@@ -38,7 +38,30 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "jokes-api",
+      "patterns": [
+        "https:\\/\\/api\\.chucknorris\\.io\\/jokes\\/random"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    },
+    {
+      "name": "products-api",
+      "patterns": [
+        "https:\\/\\/localhost:5001\\/api\\/Products"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/Shop/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/Shop/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -49,9 +72,9 @@
     "/Shop/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/Shop/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/Shop/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/Shop/index.html": "07c24d066c1aa981b3ab45d1845e9146d393752e",
-    "/Shop/main-es2015.6b666dccc88100670fe5.js": "e1769474d6ea6829cc4ae14b1d48ca55be135804",
-    "/Shop/main-es5.6b666dccc88100670fe5.js": "1b1beb4c5484731c4c4e5d83f708dd56a427e502",
+    "/Shop/index.html": "dbdcc453fac84291d9ada4ca1949ebb4232133b0",
+    "/Shop/main-es2015.f31515a09d1162a1b950.js": "a752cba8c593c3c8abcbabb600ea99e54e34a0a9",
+    "/Shop/main-es5.f31515a09d1162a1b950.js": "841ea574bb7e346194351a86a067f616807d7e38",
     "/Shop/manifest.webmanifest": "e97d30ae95d2ff441e2cbdc75f681ab52cae8deb",
     "/Shop/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/Shop/polyfills-es5.9e286f6d9247438cbb02.js": "e51a1de4f016cd689dbdbef51043dec9518c4111",
